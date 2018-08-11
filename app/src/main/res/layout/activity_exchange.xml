@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".exchange">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_pc07"
+            />
+
+        <TextView
+            android:layout_marginRight="30dp"
+            android:id="@+id/TV1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Tong Study $EXCHANGE"
+            android:textAlignment="center"
+            android:textColor="#fFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_marginLeft="30dp"
+                android:id="@+id/edtMile"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#fFFFFF"
+                android:hint="請輸入港幣"
+                android:inputType="number"
+                android:textSize="28dp"
+                ></EditText>
+
+            <TextView
+
+                android:id="@+id/txtMile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="港幣轉算"
+                android:textSize="28dp"
+                android:textColor="#fFFFFF"
+                >
+                <requestFocus />
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:id="@+id/txtKm"
+                android:text=" HKD TO USD 0.127397 "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fFFFFF"
+                android:textSize="28sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+
+                android:layout_marginLeft="30dp"
+                android:id="@+id/txtCh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fFFFFF"
+                android:textSize="28sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtkr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fFFFFF"
+            android:textSize="28sp"
+            />
+
+        <Button
+            android:id="@+id/btnTran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="轉換"
+            android:textSize="28sp"
+            />
+
+    </LinearLayout>
