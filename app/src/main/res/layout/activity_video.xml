@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Upgrade">
+    tools:context=".Video">
 
 
     <LinearLayout
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="30dp"
-            android:text="  Tong Study Upgrade"
+            android:text="  Tong Study 簡介片"
             android:textAlignment="center"
             android:textColor="#fFFFFF"
             android:textSize="30dp"
@@ -32,6 +32,14 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/txtSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="簡介"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/btnView"
@@ -40,14 +48,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Upgrade" />
-
+        android:text="簡介片播放" />
 
     <ImageView
-        android:id="@+id/app"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
+
         android:src="@drawable/ic_appdebug" />
 
 </LinearLayout>

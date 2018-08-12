@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Upgrade">
+    tools:context=".whatsapp">
 
 
     <LinearLayout
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="30dp"
-            android:text="  Tong Study Upgrade"
+            android:text="  Tong Study WHATSAPP我"
             android:textAlignment="center"
             android:textColor="#fFFFFF"
             android:textSize="30dp"
@@ -33,21 +33,27 @@
     </LinearLayout>
 
 
-    <Button
-        android:id="@+id/btnView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Upgrade" />
-
-
-    <ImageView
-        android:id="@+id/app"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/ic_appdebug" />
+        android:orientation="horizontal">
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_gifmario05" />
+
+        <ImageButton
+            android:id="@+id/btnView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_what"
+            android:text="WHATAPP我" />
+    </LinearLayout>
 
 </LinearLayout>

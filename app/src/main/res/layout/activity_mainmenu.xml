@@ -87,11 +87,12 @@
 
 
         <ImageButton
-            android:src="@drawable/ic_co9999"
+            android:onClick="onButtonClick9"
             android:layout_marginLeft="15dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:id="@+id/button9"
+            android:src="@drawable/ic_marksix_icon150"
             >
         </ImageButton>
 
@@ -105,29 +106,34 @@
     >
 
     <ImageButton
-        android:src="@drawable/ic_co9999"
+        android:id="@+id/button14"
         android:layout_marginLeft="15dp"
         android:layout_width="100dp"
         android:layout_height="100dp"
-
+        android:onClick="onButtonClick14"
+        android:src="@drawable/ic_bmi"
         >
     </ImageButton>
 
 
     <ImageButton
-        android:src="@drawable/ic_co9999"
+        android:id="@+id/button15"
         android:layout_marginLeft="15dp"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:onClick="onButtonClick15"
+        android:src="@drawable/ic_memo150"
         >
     </ImageButton>
 
 
     <ImageButton
-        android:src="@drawable/ic_co9999"
+        android:id="@+id/button16"
         android:layout_marginLeft="15dp"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:onClick="onButtonClick16"
+        android:src="@drawable/ic_what"
         >
     </ImageButton>
 
@@ -142,7 +148,9 @@
         >
 
         <ImageButton
-            android:src="@drawable/ic_co9999"
+            android:id="@+id/button10"
+            android:onClick="onButtonClick10"
+            android:src="@drawable/ic_icon_video4"
             android:layout_marginLeft="15dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
