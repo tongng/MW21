@@ -1,5 +1,4 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -25,7 +24,7 @@
             android:id="@+id/TV1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  Tong Study電子優惠劵"
+            android:text="  Tong Study 電子優惠劵"
             android:textAlignment="center"
             android:textColor="#fFFFFF"
             android:textSize="30dp"
@@ -38,7 +37,7 @@
         android:layout_height="50dp"
         android:orientation="horizontal">
         <Button
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="25dp"
             android:id="@+id/btnPrev"
             android:layout_width="150dp"
             android:layout_height="wrap_content"

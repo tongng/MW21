@@ -23,7 +23,9 @@
         <activity android:name=".webview" />
         <activity android:name=".kfc" />
         <activity android:name=".exchange" />
-        <activity android:name=".Listview"></activity>
+        <activity android:name=".Listview" />
+        <activity android:name=".contact" />
+        <activity android:name=".Upgrade"></activity>
     </application>
 
 </manifest>

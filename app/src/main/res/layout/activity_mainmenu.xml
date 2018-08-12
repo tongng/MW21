@@ -152,7 +152,9 @@
 
 
         <ImageButton
-            android:src="@drawable/ic_co9999"
+            android:id="@+id/button11"
+            android:onClick="onButtonClick11"
+            android:src="@drawable/ic_up"
             android:layout_marginLeft="15dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -161,7 +163,9 @@
 
 
         <ImageButton
-            android:src="@drawable/ic_co9999"
+            android:id="@+id/button12"
+            android:onClick="onButtonClick12"
+            android:src="@drawable/ic_contact"
             android:layout_marginLeft="15dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
