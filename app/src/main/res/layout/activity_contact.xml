@@ -61,26 +61,6 @@
         android:layout_marginTop="8dp"
         android:text="撥打熱線電話" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
 
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="100dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/ic_gifmario04" />
-
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="130dp"
-            android:layout_height="190dp"
-            android:src="@drawable/ic_gif_mario" />
-
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="100dp"
-            android:layout_height="170dp"
-            android:src="@drawable/ic_gifmario05" />
-    </LinearLayout>
 
 </LinearLayout>
