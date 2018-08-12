@@ -22,7 +22,8 @@
         <activity android:name=".Music" />
         <activity android:name=".webview" />
         <activity android:name=".kfc" />
-        <activity android:name=".exchange"></activity>
+        <activity android:name=".exchange" />
+        <activity android:name=".Listview"></activity>
     </application>
 
 </manifest>

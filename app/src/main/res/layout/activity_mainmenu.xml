@@ -76,10 +76,11 @@
 
 
         <ImageButton
-            android:src="@drawable/ic_co9999"
+            android:onClick="onButtonClick8"
             android:layout_marginLeft="15dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:src="@drawable/ic_mariologo"
             android:id="@+id/button8"
             >
         </ImageButton>
