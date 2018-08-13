@@ -67,27 +67,5 @@
         android:text="核對中獎號碼"
         android:textSize="20dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="100dp"
-            android:layout_height="170dp"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/ic_gif_mario" />
-
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="100dp"
-            android:layout_height="170dp"
-            android:src="@drawable/ic_gifmario04" />
-
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="100dp"
-            android:layout_height="170dp"
-            android:src="@drawable/ic_gifmario05" />
-    </LinearLayout>
-
 
 </LinearLayout>

@@ -31,22 +31,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:orientation="horizontal">
-
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="150dp"
-            android:layout_height="130dp"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/ic_gifmario04" />
-
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="150dp"
-            android:layout_height="130dp"
-            android:src="@drawable/ic_gifmario01" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
