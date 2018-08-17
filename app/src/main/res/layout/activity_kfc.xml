@@ -1,67 +1,103 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/ic_bgmario01"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".kfc">
 
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal"
-        >
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_pc07" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="serif"
+                        android:lineSpacingExtra="8sp"
+                        android:text="Tong Study"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#f47004"
+                        android:textSize="35dp"
+                        android:textStyle="bold|italic"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/tt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="serif"
+                        android:lineSpacingExtra="8sp"
+                        android:text="$ 電子優惠劵"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#505dbe"
+                        android:textSize="30dp"
+                        android:textStyle="bold|italic"
+                        android:typeface="serif" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPrev"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="上一張" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnPrev"
+
+                android:text="下一張" />
+        </LinearLayout>
 
         <ImageView
-            android:layout_marginLeft="30dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_pc07"
-            />
-
-        <TextView
-            android:layout_marginRight="30dp"
-            android:id="@+id/TV1"
+            android:id="@+id/imgPhoto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  Tong Study 電子優惠劵"
-            android:textAlignment="center"
-            android:textColor="#fFFFFF"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
-        <Button
-            android:layout_marginLeft="25dp"
-            android:id="@+id/btnPrev"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-
-            android:text="上一張" />
-
-        <Button
-            android:layout_marginLeft="15dp"
-            android:id="@+id/btnNext"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnPrev"
-
-            android:text="下一張" />
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imgPhoto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnNext"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="5dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic_launcher_kfc100" />
+            android:layout_below="@+id/btnNext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher_kfc100" />
 </LinearLayout>
+</RelativeLayout>

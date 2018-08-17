@@ -1,40 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/ic_bgmario01"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Upgrade">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/ic_launcher_pc07" />
-
-        <TextView
-            android:id="@+id/TV1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:text="  Tong Study Upgrade"
-            android:textAlignment="center"
-            android:textColor="#fFFFFF"
-            android:textSize="30dp"
-            android:textStyle="bold" />
-
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     </LinearLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_pc07" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="serif"
+                        android:lineSpacingExtra="8sp"
+                        android:text="Tong Study"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#f47004"
+                        android:textSize="35dp"
+                        android:textStyle="bold|italic"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/tt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="serif"
+                        android:lineSpacingExtra="8sp"
+                        android:text="APP Upgrade"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#505dbe"
+                        android:textSize="30dp"
+                        android:textStyle="bold|italic"
+                        android:typeface="serif" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
     <Button
         android:id="@+id/btnView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -51,3 +96,4 @@
         android:src="@drawable/ic_appdebug" />
 
 </LinearLayout>
+</RelativeLayout>

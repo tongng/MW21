@@ -1,118 +1,285 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/ic_bgmario01"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".exchange">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal"
-        >
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageView
-            android:layout_marginLeft="30dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_pc07"
-            />
-
-        <TextView
-            android:layout_marginRight="30dp"
-            android:id="@+id/TV1"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  Tong Study $EXCHANGE"
-            android:textAlignment="center"
-            android:textColor="#fFFFFF"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
+            android:orientation="vertical">
 
 
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
 
-            <EditText
-                android:layout_marginLeft="30dp"
-                android:id="@+id/edtMile"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:textColor="#fFFFFF"
-                android:hint="請輸入港幣"
-                android:inputType="number"
-                android:textSize="28dp"
-                ></EditText>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher_pc07" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:fontFamily="serif"
+                            android:lineSpacingExtra="8sp"
+                            android:text="Tong Study"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="#f47004"
+                            android:textSize="35dp"
+                            android:textStyle="bold|italic"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/tt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:fontFamily="serif"
+                            android:lineSpacingExtra="8sp"
+                            android:text="$ ExChange"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="#505dbe"
+                            android:textSize="30dp"
+                            android:textStyle="bold|italic"
+                            android:typeface="serif" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+
+                    android:id="@+id/txtKm"
+
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:text="美元"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5979ec"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/txtCh"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:text="人民幤"
+                    android:textColor="#f47004"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/txtCh1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:text="新台幣"
+                    android:textColor="#5979ec"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/txtCh2"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:layout_width="match_parent"
+                    android:text="日圓"
+                    android:textColor="#f47004"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/txtCh3"
+
+                    android:layout_marginTop="8dp"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:text="韓元"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5979ec"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/txtCh4"
+
+                    android:layout_marginTop="8dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:text="歐元"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f47004"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+            </LinearLayout>
 
             <TextView
-
-                android:id="@+id/txtMile"
+                android:id="@+id/txtkr"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#f47004"
+                android:textSize="28sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtMile"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_weight="1"
                 android:text="港幣轉算"
+                android:textColor="#f47004"
                 android:textSize="28dp"
-                android:textColor="#fFFFFF"
-                >
+                android:textStyle="bold|italic"
+                android:typeface="serif">
+
                 <requestFocus />
             </TextView>
 
+            <EditText
+                android:id="@+id/edtMile"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/screen_background_dark_transparent"
+                android:hint="請輸入港幣"
+                android:inputType="number"
+                android:textColor="#f47004"
+                android:textColorHint="#f47004"
+                android:textSize="28dp"
+                android:textStyle="bold|italic"
+                android:typeface="serif"></EditText>
+
+
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_marginLeft="30dp"
-                android:id="@+id/txtKm"
-                android:text=" HKD TO USD 0.127397 "
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#fFFFFF"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="Online"
                 android:textSize="28sp"
+
                 />
 
-        </LinearLayout>
+            <Button
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-
-                android:layout_marginLeft="30dp"
-                android:id="@+id/txtCh"
+                android:layout_marginTop="8dp"
+                android:id="@+id/btnTran"
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#fFFFFF"
+                android:text="轉換"
                 android:textSize="28sp"
+
+
                 />
+
+
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/txtkr"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#fFFFFF"
-            android:textSize="28sp"
-            />
-
-        <Button
-            android:id="@+id/btnTran"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="轉換"
-            android:textSize="28sp"
-            />
 
     </LinearLayout>
+
+</RelativeLayout>

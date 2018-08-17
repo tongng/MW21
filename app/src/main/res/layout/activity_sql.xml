@@ -1,0 +1,262 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bgmario01"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SQL">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher_pc07" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:fontFamily="serif"
+                            android:lineSpacingExtra="8sp"
+                            android:text="Tong Study"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="#f47004"
+                            android:textSize="35dp"
+                            android:textStyle="bold|italic"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/tt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:fontFamily="serif"
+                            android:lineSpacingExtra="8sp"
+                            android:text="SQL"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="#505dbe"
+                            android:textSize="30dp"
+                            android:textStyle="bold|italic"
+                            android:typeface="serif" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="120dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:text="@string/username"
+                    android:textAlignment="textEnd"
+                    android:textColor="#2a4aba"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/editName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:hint="Enter Name"
+                    android:inputType="textPersonName"
+                    android:textColor="#f47004"
+                    android:textColorHint="#f47004"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:hint="Enter Password"
+                    android:text="@string/password"
+                    android:textColor="#2a4aba"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/editPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:textAllCaps="false"
+                    android:textColor="#f47004"
+                    android:textColorHint="#f47004"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_weight="1"
+                    android:onClick="addUser"
+                    android:text="@string/add_user"
+                    android:textColor="#ffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:onClick="viewdata"
+                    android:text="@string/view_data"
+                    android:textColor="#ffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:hint="Current Name"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:hint="New Name"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="update"
+                    android:text="@string/update"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:freezesText="false"
+                    android:hint="Enter Name to Delete Data"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/button4"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="delete"
+                    android:text="@string/delete"
+                    android:textStyle="normal|bold"
+                    tools:ignore="RelativeOverlap" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
