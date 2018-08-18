@@ -171,7 +171,7 @@
                 android:layout_weight="1"
                 android:background="@android:drawable/screen_background_light_transparent"
                 android:onClick="onButtonClick16"
-                android:src="@drawable/ic_icon_map"></ImageButton>
+                android:src="@drawable/ic_iconboss"></ImageButton>
 
 
         </LinearLayout>

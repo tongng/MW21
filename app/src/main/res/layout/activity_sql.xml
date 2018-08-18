@@ -88,7 +88,7 @@
                     android:text="@string/username"
                     android:textAlignment="textEnd"
                     android:textColor="#2a4aba"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold|italic"
                     android:typeface="serif" />
 
@@ -103,7 +103,7 @@
                     android:inputType="textPersonName"
                     android:textColor="#f47004"
                     android:textColorHint="#f47004"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold|italic"
                     android:typeface="serif" />
             </LinearLayout>
