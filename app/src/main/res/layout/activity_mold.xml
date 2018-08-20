@@ -3,12 +3,18 @@
     android:id="@+id/fl"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/ic_bgmario01">
+    android:background="@drawable/ic_bghole">
+
+    <TextView
+        android:id="@+id/tv200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/mouse" />
+
 </FrameLayout>
 
